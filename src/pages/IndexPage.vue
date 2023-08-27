@@ -1,9 +1,6 @@
 <template>
   <div class="q-pa-md" style="max-width: 400px">
-<<<<<<< HEAD
-=======
 
->>>>>>> thai-lang
     <q-form
       @submit="onSubmit"
       @reset="onReset"
@@ -12,39 +9,16 @@
       <q-input
         filled
         v-model="name"
-<<<<<<< HEAD
-        label="Your name *"
-        hint="Name and surname"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
-      />
-=======
         label="ชื่อ-สกุล *"
         hint="ชื่อและนามสกุล"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาพิมพ์ชื่อ']"
       />
 
->>>>>>> thai-lang
       <q-input
         filled
         type="number"
         v-model="age"
-<<<<<<< HEAD
-        label="Your age *"
-        lazy-rules
-        :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
-        ]"
-      />
-      <q-toggle v-model="accept" label="I accept the license and terms" />
-      <div>
-        <q-btn label="Submit" type="submit" color="primary"/>
-        <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
-      </div>
-    </q-form>
-=======
         label="อายุ *"
         lazy-rules
         :rules="[
@@ -61,7 +35,6 @@
       </div>
     </q-form>
 
->>>>>>> thai-lang
   </div>
 </template>
 
@@ -86,11 +59,7 @@ export default {
             color: 'red-5',
             textColor: 'white',
             icon: 'warning',
-<<<<<<< HEAD
-            message: 'You need to accept the license and terms first'
-=======
             message: 'คุณจำเป็นต้องยอมรับ'
->>>>>>> thai-lang
           })
         }
         else {
@@ -98,11 +67,7 @@ export default {
             color: 'green-4',
             textColor: 'white',
             icon: 'cloud_done',
-<<<<<<< HEAD
-            message: 'Submitted'
-=======
             message: 'ข้อมูลได้รับการยืนยัน'
->>>>>>> thai-lang
           })
         }
       },
@@ -114,8 +79,4 @@ export default {
     }
   }
 }
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> thai-lang
